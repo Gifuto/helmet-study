@@ -2,12 +2,6 @@ const express = require('express');
 const helmet = require('helmet');
 const app = express();
 
-const PORT = process.env.Port || 330
-
-app.listen(PORT, () => {
-  console.log(`server started on port ${PORT}`)
-})
-
 module.exports = app;
 const api = require('./server.js');
 app.use(express.static('public'));
